@@ -1,0 +1,211 @@
+phase,week,day,swim_hours,swim,bike_hours,bike,run_hours,run,total_hours
+Base,1,1,,REST,,REST,,REST,0:00
+Base,1,2,1:00,#1,,Off,0:30,Z2,1:30
+Base,1,3,,,0:30,Trans: Z1 100+RPM,0:15,Z2,0:45
+Base,1,4,60,#2,0:30,Z1 (100+RPM),,Off,1:30
+Base,1,5,,,,Off,0:30,Z2,0:30
+Base,1,6,,,60,Z2,,,60
+Base,1,7,,,,,0:45,Z1-Z2,0:45
+Base,2,1,,REST,,REST,,REST,0:00
+Base,2,2,60,#3,,Off,0:30,Z2,1:30
+Base,2,3,,,0:30,Trans (fast): Z2,0:15,Z2,0:45
+Base,2,4,60,#4,0:30,Z1 (100+RPM),,Off,1:30
+Base,2,5,,,,,0:45,Z2,0:45
+Base,2,6,,,1:30,Z2,,Off,1:30
+Base,2,7,,,,Off,60,Z1-Z2,60
+Base,3,1,,REST,,REST,,REST,0:00
+Base,3,2,60,#5,,Off,0:45,Z2,1:45
+Base,3,3,,,0:30,Trans (fast): Z2,0:15,Z2,0:45
+Base,3,4,60,#1,0:45,Z1 (100+RPM),,Off,1:45
+Base,3,5,,,,,60,Z2,60
+Base,3,6,,,1:45,Z2,,Off,1:45
+Base,3,7,,,,Off,60,Z2,60
+Base,4,1,,REST,,REST,,REST,0:00
+Base,4,2,60,#2,,Off,0:30,Z2,1:30
+Base,4,3,,,0:30,Trans (fast): Z2,0:15,Z2,0:45
+Base,4,4,60,#3,0:30,Z1 (100+RPM),,Off,1:30
+Base,4,5,,,,,0:45,Z2,0:45
+Base,4,6,,,1:30,Z2,,Off,1:30
+Base,4,7,,,,Off,60,Z2,60
+Base,5,1,,REST,,REST,,REST,0:00
+Base,5,2,60,#4,,Off,0:45,Z2,1:45
+Base,5,3,,,0:30,Trans (fast): Z2,0:15,Z2,0:45
+Base,5,4,60,#5,0:45,Z1 (100+RPM),,Off,1:45
+Base,5,5,,,,Off,60,Z2,60
+Base,5,6,,,1:45,Z2,,,1:45
+Base,5,7,,,,,60,Z1-Z2,60
+Base,6,1,,REST,,REST,,REST,0:00
+Base,6,2,60,#1,,Off,60,Z2,2:00
+Base,6,3,,,0:45,Trans (fast): Z2,0:15,Z2,60
+Base,6,4,60,#2,60,Z1 (100+RPM),,Off,2:00
+Base,6,5,,,,,60,Z2,60
+Base,6,6,,,2:00,Z2,,Off,2:00
+Base,6,7,,,,Off,60,Z1-Z2,60
+Base,7,1,,REST,,REST,,REST,0:00
+Base,7,2,60,#3,,Off,60,Z2,2:00
+Base,7,3,,,0:45,Trans (fast): Z2,0:15,Z2,60
+Base,7,4,60,#4,60,Z1 (100+RPM),,Off,2:00
+Base,7,5,,,,,1:15,Z2,1:15
+Base,7,6,,,2:30,Z2,,Off,2:30
+Base,7,7,,,,Off,1:15,Z1-Z2,1:15
+Base,8,1,,REST,,REST,,REST,0:00
+Base,8,2,60,#5,,Off,60,Z2,2:00
+Base,8,3,,,0:45,Trans (fast): Z2,0:15,Z2,60
+Base,8,4,60,#1,60,Z1 (100+RPM),,Off,2:00
+Base,8,5,,,,,60,Z2,60
+Base,8,6,,,2:00,Z2,,Off,2:00
+Base,8,7,,,,Off,60,Z1-Z2,60
+Base,9,1,,REST,,REST,,REST,0:00
+Base,9,2,60,#2,,Off,60,Z2,2:00
+Base,9,3,,,0:45,Trans (fast): Z2,0:15,Z2,60
+Base,9,4,60,#3,60,Z1 (100+RPM),,Off,2:00
+Base,9,5,,,,Off,60,Z2,60
+Base,9,6,,,2:45,Z2,,,2:45
+Base,9,7,,,,,1:15,Z1-Z2,1:15
+Base,10,1,,REST,,REST,,REST,0:00
+Base,10,2,60,#4,,Off,60,Z2,2:00
+Base,10,3,,,0:45,Trans (fast): Z2,0:30,Z2,1:15
+Base,10,4,60,#5,1:15,Z1 (100+RPM),,Off,2:15
+Base,10,5,,,,,60,Z2,60
+Base,10,6,,,3:00,Z2,,Off,3:00
+Base,10,7,,,,Off,1:30,Z1-Z2,1:30
+Base,11,1,,REST,,REST,,REST,0:00
+Base,11,2,60,#6,,Off,60,"Z2; at 0:10 do 5 x 1min strides, 1min jog",2:00
+Base,11,3,,,0:45,Trans (fast): Z2,0:30,Z2,1:15
+Base,11,4,60,#7,1:15,"Z2; at 0:15 add 5x1min PU, 1min spin",,Off,2:15
+Base,11,5,60,#8,,,60,Z2; at 0:45 add 5min Z4 (hard!),2:00
+Base,11,6,,,2:30,Trans (fast): Z2,0:15,Z2,2:45
+Base,11,7,,,0:30,Z1 (100+ RPM),60,Z1-Z2,1:30
+Base,12,1,,REST,,REST,,REST,0:00
+Base,12,2,60,#9,,Off,0:45,Z2; at 0:10 add 5min Z4 (hard!),1:45
+Base,12,3,,,0:45,Trans (fast): Z2,0:15,Z2,60
+Base,12,4,60,#10,60,Z2; at 0:15 add 5min Z4 (hard!),,Off,2:00
+Base,12,5,60,#11,,Off,60,Z2; at 0:45 add 5min Z4 (hard!),2:00
+Base,12,6,,,2:30,Trans (fast): Z2,0:15,Z2,2:45
+Base,12,7,,,0:30,Z1 (100+ RPM),60,Z1-Z2,1:30
+Build,13,1,,REST,,REST,,REST,0:00
+Build,13,2,60,#6,,Off,0:45,"Z2; at 0:10 do 3 x 3min Z4, 1min jog",1:45
+Build,13,3,,,0:45,Trans (fast): Z2,0:15,Z2,60
+Build,13,4,60,#7,60,"Z2; at 0:15 do 2 x 5min Z4, 3min spin",,Off,2:00
+Build,13,5,60,#8,,Off,60,Z2; at 0:45 add 5min Z4 (hard!),2:00
+Build,13,6,,,3:00,Trans (fast): Z2; at 2:50 do 5mins Z4,0:30,Z2,3:30
+Build,13,7,,,0:30,Z1 (100+ RPM),1:15,Z1-Z2,1:45
+Build,14,1,,REST,,REST,,REST,0:00
+Build,14,2,60,#9,,Off,60,Z2,2:00
+Build,14,3,,,0:45,Trans (fast): Z2,0:30,Z2,1:15
+Build,14,4,60,#10,60,"Z2; at 0:15 do 3 x 5min Z4, 3min spin",,Off,2:00
+Build,14,5,60,#11,,Off,60,Z2; at 0:45 add 7.5min Z4 (hard!),2:00
+Build,14,6,,,3:30,Trans (fast): Z2; at 3:20 do 5min Z4,0:30,Z2,4:00
+Build,14,7,,,0:30,Z1 (100+ RPM),1:15,Z1-Z2,1:45
+Build,15,1,,REST,,REST,,REST,0:00
+Build,15,2,60,#6,,Off,60,"Z2; at 0:10 do 2 x 6min Z4, 2min jog",2:00
+Build,15,3,,,0:45,Trans (fast): Z4 (hard!),0:30,Z2,1:15
+Build,15,4,60,#7,60,"Z2; at 0:15 do 4 x 5min Z4, 3min spin",,Off,2:00
+Build,15,5,60,#8,,,60,Z2; at 0:45 add 7.5min Z4 (hard!),2:00
+Build,15,6,,,4:00,Trans (fast): Z2; at 3:50 do 5min Z4,0:30,Z2,4:30
+Build,15,7,,,0:45,Z1 (100+ RPM),1:30,Z1-Z2,2:15
+Build,16,1,,REST,,REST,,REST,0:00
+Build,16,2,60,#9,,Off,60,"Z2; at 0:10 add 5 x 3min Z4, 1min jog",2:00
+Build,16,3,,,0:45,Trans (fast): Z2,0:30,Z2,1:15
+Build,16,4,60,#10,60,"Z2; at 0:15 5 x 5min Z4, 3min spin",,Off,2:00
+Build,16,5,60,#11,,Off,60,Z2; at 0:45 do 10min Z4 (hard!),2:00
+Build,16,6,,,3:00,Trans (fast): Z2; at 2:50 do 5min Z4,0:30,Z2,3:30
+Build,16,7,,,0:45,Z1 (100+ RPM),1:30,Z1-Z2,2:15
+Build,17,1,,REST,,REST,,REST,0:00
+Build,17,2,60,#6,,Off,60,"Z2; at 0:10 do 3 x 6min Z4, 2min jog",2:00
+Build,17,3,,,0:45,Trans (fast): Z2,0:30,Z2,1:15
+Build,17,4,60,#7,1:15,"Z2; at 0:10 do 6 x 5min Z4, 3min spin",,Off,2:15
+Build,17,5,60,#8,,Off,1:15,Z2; at 60 add 10min Z4 (hard!),2:15
+Build,17,6,,,3:30,Trans (fast): Z2,0:30,Z2,4:00
+Build,17,7,,,60,Z1 (100+ RPM),1:15,Z1-Z2,2:15
+Build,18,1,,REST,,REST,,REST,0:00
+Build,18,2,60,#9,,Off,60,"Z2; at 0:10 do 5 x 1 min PU, 1min jog",2:00
+Build,18,3,,,0:45,Trans (fast): Z2,0:30,Z2,1:15
+Build,18,4,0:30,Easy,60,"Z2; at 0:15 do 5 x 1min easy PU, 1min spin",,Off,1:30
+Build,18,5,,,,Off,0:40,"Z1; at 0:10 do 5 x 1min easy PU, 1min jog",0:40
+Build,18,6,,,0:15,Z1 - easy; safety check,0:20,Z1 - easy,0:35
+Build,18,7,,RACE,2:00,RACE; optional 2:00 easy Z1 in p.m.,,RACE,2:00
+Build,19,1,,REST,,REST,,REST,0:00
+Build,19,2,60,#10,,Off,60,Z1 to Z2,2:00
+Build,19,3,,,0:45,Trans (fast): Z2,0:30,Z2,1:15
+Build,19,4,60,#11,1:15,Z2,,Off,2:15
+Build,19,5,60,#6,,,1:15,Z2,2:15
+Build,19,6,,,4:00,Trans (fast): Z2,0:45,Z2,4:45
+Build,19,7,,,60,Z1 (100+ RPM),1:30,Z1-Z2,2:30
+Build,20,1,,REST,,REST,,REST,0:00
+Build,20,2,60,#12,,Off,60,"Z2; at 0:10 add 4 x 4.5min Z4, 1.5min jog",2:00
+Build,20,3,,,0:45,Trans (fast): Z2,0:30,Z2,1:15
+Build,20,4,60,#13,1:30,"Z2; at 0:15 8 x 5min Z4, 2min spin",,Off,2:30
+Build,20,5,60,#14,,Off,1:15,Z2; at 60 do 10min Z4 (hard!),2:15
+Build,20,6,,,4:00,Trans (fast): Z2,0:45,Z2,4:45
+Build,20,7,,,1:15,Z1 (100+ RPM),2:00,Z1-Z2,3:15
+Peak,21,1,,REST,,REST,,REST,0:00
+Peak,21,2,60,#15,,Off,1:15,Z2; at 60 do 10min Z4,2:15
+Peak,21,3,,,0:45,Trans (fast): Z2,0:30,Z2,1:15
+Peak,21,4,60,#16,1:30,"Z2; at 0:15 do 4 x 7min Z4, 4min spin",,Off,2:30
+Peak,21,5,60,#17,,Off,1:15,Z2; at 60 add 10min Z4 (hard!),2:15
+Peak,21,6,,,4:00,Trans (fast): Z2,0:45,Z2,4:45
+Peak,21,7,,,1:15,Z1 (100+ RPM),1:15,Z1-Z2,2:30
+Peak,22,1,,REST,,REST,,REST,0:00
+Peak,22,2,60,#12,,Off,60,"Z2; at 0:10 do 5 x 1 min PU, 1min jog",2:00
+Peak,22,3,,,0:45,Trans (fast): Z2,0:30,Z2,1:15
+Peak,22,4,0:30,Easy,60,"Z2; at 0:15 do 5 x 1min easy PU, 1min spin",,Off,1:30
+Peak,22,5,,,,Off,0:40,"Z1; at 0:10 do 5 x 1min easy PU, 1min jog",0:40
+Peak,22,6,,,0:15,Z1 - easy; safety check,0:20,Z1 - easy,0:35
+Peak,22,7,,RACE (Half Ironman),,RACE (Half Ironman),,RACE (Half Ironman),0:00
+Peak,23,1,,REST,,REST,,REST,0:00
+Peak,23,2,60,#13,,Off,1:15,Z1 to Z2,2:15
+Peak,23,3,,,0:45,Trans (fast): Z2,0:30,Z2,1:15
+Peak,23,4,60,#14,1:30,Z2,,Off,2:30
+Peak,23,5,60,#15,,,1:30,Z2,2:30
+Peak,23,6,,,5:00,Trans (fast): Z2,0:45,Z2,5:45
+Peak,23,7,,,0:45,Z1 (100+ RPM),2:00,Z1-Z2,2:45
+Peak,24,1,,REST,,REST,,REST,0:00
+Peak,24,2,60,#16,,Off,1:15,"Z2; at 0:10 add 3 x 6min Z4, 2min jog",2:15
+Peak,24,3,,,60,Trans (fast): Z2,0:30,Z2,1:30
+Peak,24,4,60,#17,1:30,Z2; at 60 do 20min Z4,,Off,2:30
+Peak,24,5,60,#12,,Off,1:30,Z2; at 1:10 do 10min Z4 (hard!),2:30
+Peak,24,6,,,5:00,Trans (fast): Z2; at 4:45 do 7.5min Z4,60,Z2,6:00
+Peak,24,7,,,60,Z1 (100+ RPM),2:15,Z1-Z2,3:15
+Peak,25,1,,REST,,REST,,REST,0:00
+Peak,25,2,60,#13,,Off,60,"Z2; at 0:10 do 4 x 6min Z4, 2min jog",2:00
+Peak,25,3,,,60,Trans (fast): Z2,0:30,Z2,1:30
+Peak,25,4,60,#14,1:30,Z2; at 60 do 20min Z4,,Off,2:30
+Peak,25,5,60,#15,,Off,1:30,Z2; at 1:10 add 10min Z4 (hard!),2:30
+Peak,25,6,,,5:30,Trans (fast): Z2; at 5:15 do 10min Z4,60,Z2,6:30
+Peak,25,7,,,1:30,Z1 (100+ RPM),2:30,Z1-Z2,4:00
+Peak,26,1,,REST,,REST,,REST,0:00
+Peak,26,2,60,#16,,Off,60,"Z2; at 0:10 do 5 x 6min Z4, 2min jog",2:00
+Peak,26,3,,,60,Trans (fast): Z2,0:30,Z2,1:30
+Peak,26,4,60,#17,1:30,Z2; at 0:55 do 25min Z4,,Off,2:30
+Peak,26,5,60,#12,,Off,1:30,Z2,2:30
+Peak,26,6,,,5:30,Trans (fast): Z2; at 5:10 do 12min Z4,60,Z2,6:30
+Peak,26,7,,,1:15,Z1 (100+ RPM),2:45,Z1-Z2,4:00
+Peak,27,1,,REST,,REST,,REST,0:00
+Peak,27,2,60,#13,,Off,60,"Z2; at 0:10 do 5 x 6min Z4, 2min jog",2:00
+Peak,27,3,,,60,Trans (fast): Z2,0:30,Z2,1:30
+Peak,27,4,60,#14,1:30,Z2; at 0:50 do 30min Z4,,Off,2:30
+Peak,27,5,60,#15,,Off,1:30,Z2; at 1:10 do 12min Z4,2:30
+Peak,27,6,,,6:00,Trans (fast): Z2; at 5:40 do 15min Z4,60,Z2,7:00
+Peak,27,7,,,1:30,Z1 (100+ RPM),3:00,Z1-Z2,4:30
+Taper,28,1,,REST,,REST,,REST,0:00
+Taper,28,2,60,#16,,Off,0:45,"Z2; at 0:10, do 3 x 6min Z4, 2min jog",1:45
+Taper,28,3,,,0:45,Trans (fast): Z2,0:30,Z2,1:15
+Taper,28,4,60,#17,60,Z2; at 0:40 do 15min Z4,,Off,2:00
+Taper,28,5,60,#12,,Off,60,"Z2; at 0:10 do 2x6min Z4, 2min jog",2:00
+Taper,28,6,,,4:00,Trans (fast): Z2; at 3:45 do 10min Z4,0:30,Z2,4:30
+Taper,28,7,,,60,Z1 (100+ RPM),2:00,Z1-Z2,3:00
+Taper,29,1,,REST,,REST,,REST,0:00
+Taper,29,2,60,#13,,Off,0:45,"Z2; at 0:10 do 2 x 6min Z4, 2min jog",1:45
+Taper,29,3,,,0:45,Trans (fast): Z2,0:15,Z2,60
+Taper,29,4,60,#14,60,Z2; at 0:55 4o 10min Z4,,Off,2:00
+Taper,29,5,60,#15,,Off,0:45,Z2; at 0:30 do 7.5min Z4,1:45
+Taper,29,6,,,2:00,Trans (fast): Z2,0:30,Z2,2:30
+Taper,29,7,,,60,Z1 (100+ RPM),60,Z1-Z2,2:00
+Taper,30,1,,REST,,REST,,REST,0:00
+Taper,30,2,60,#16,,Off,60,"Z2; at 0:10 do 5 x 6min Z4, 2min jog",2:00
+Taper,30,3,,,0:45,Trans (fast): Z2,0:15,Z2,60
+Taper,30,4,0:30,Easy,60,"Z1; at 0:15 do 5x1min PU, 1 min spin",,Off,1:30
+Taper,30,5,,,,Off,0:40,"Z1; at 0:10 do 5 x 1min PU, 1min jog",0:40
+Taper,30,6,,,0:15,Z1 - easy; bike safety check,0:20,Z1 - easy; in a.m.,0:35
+Taper,30,7,,Race - Ironman,,Race - Ironman,,Race - Ironman,0:00

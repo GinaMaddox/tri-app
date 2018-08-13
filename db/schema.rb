@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_05_215436) do
+ActiveRecord::Schema.define(version: 2018_08_12_191115) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,6 +26,27 @@ ActiveRecord::Schema.define(version: 2018_08_05_215436) do
     t.string "run_hours"
     t.string "run"
     t.integer "total_hours"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "swims", force: :cascade do |t|
+    t.string "session_number"
+    t.string "warm_up"
+    t.string "drills_1"
+    t.string "main_set"
+    t.string "drills_2"
+    t.string "cool_down"
+    t.integer "total_distance"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
+    t.string "email"
+    t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
