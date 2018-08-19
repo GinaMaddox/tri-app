@@ -19,8 +19,8 @@ class Api::WorkoutsController < ApplicationController
   end
 
   def show
-    wokrout = Workout.find_by(id: params[:id])
-    render json: workout.has_json
+    workout = Workout.find_by(id: params[:id])
+    render json: workout.as_json
   end
 
   def update

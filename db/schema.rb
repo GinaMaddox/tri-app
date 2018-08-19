@@ -10,10 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_12_191115) do
+ActiveRecord::Schema.define(version: 2018_08_17_223444) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "plans", force: :cascade do |t|
+    t.string "name"
+    t.integer "weeks"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "sessions", force: :cascade do |t|
     t.string "phase"
@@ -42,6 +49,15 @@ ActiveRecord::Schema.define(version: 2018_08_12_191115) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "user_plans", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "plan_id"
+    t.date "start_date"
+    t.date "end_date"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "first_name"
     t.string "last_name"
@@ -49,6 +65,7 @@ ActiveRecord::Schema.define(version: 2018_08_12_191115) do
     t.string "password_digest"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.date "race_date"
   end
 
   create_table "workouts", force: :cascade do |t|
@@ -64,6 +81,7 @@ ActiveRecord::Schema.define(version: 2018_08_12_191115) do
     t.integer "total_hours"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "plan_id"
   end
 
 end

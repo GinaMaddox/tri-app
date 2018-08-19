@@ -1,5 +1,10 @@
 class Api::UsersController < ApplicationController
 
+  def index
+    users = User.all
+    render json: users.as_json
+  end
+
   def create
     user = User.new(
       first_name: params[:first_name],
@@ -9,6 +14,20 @@ class Api::UsersController < ApplicationController
       password_confirmation: params[:password_confirmation]
     )
     user.save
-      render json: user.as_json
+    render json: user.as_json
   end
+
+  def show
+    user = User.find_by(id: params[:id])
+    render json: user.as_json
+  end
+
+  def update
+    user = User.find_by(id: params[:id])
+      user.first_name = params[:first_name],
+      user.last_name = params[:last_name],
+      user.email = params[:email],
+      user.password = params[:password],
+      user.password_confirmation = params[:password_confirmation]
+
 end
