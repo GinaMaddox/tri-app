@@ -117,7 +117,10 @@
   <div class="vue-component">
     <p> {{ message }}</p>
     <div v-for="workout in workouts">
-     <p>swim: {{workout.swim}} bike: {{workout.bike}} run: {{workout.run}} total hours: {{workout.total_hours}}</p>
+     <p>Swim: {{ workout.swim_hours}} {{workout.swim}}</p>
+     <p>Bike: {{workout.bike_hours}} {{workout.bike}}</p> 
+     <p>Run: {{workout.run_hours}} {{workout.run}}</p> 
+     <p>Total Training Time: {{workout.total_hours}}</p>
      <hr>
     </div>
   </div>
