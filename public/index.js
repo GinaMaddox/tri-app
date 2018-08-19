@@ -6,7 +6,7 @@ var HomePage = {
   template: "#home-page",
   data: function() {
     return {
-      message: "Your Training Plan",
+      message: "Endurance Lab",
     };
   },
   created: function() {},
@@ -102,8 +102,9 @@ var DashboardPage = {
   template: "#dashboard-page",
   data: function() {
     return {
-      message: "dashboard here",
+      message: "Your 140.6 Training Plan",
       workouts: [],
+
     };
   },
   created: function() {

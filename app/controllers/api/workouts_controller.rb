@@ -1,6 +1,6 @@
 class Api::WorkoutsController < ApplicationController
   def index
-    workouts = Workout.all
+    workouts = Workout.where(phase: "Full")
     render json: workouts.as_json
   end
 
