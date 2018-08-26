@@ -28,6 +28,9 @@ class Api::UsersController < ApplicationController
       user.last_name = params[:last_name],
       user.email = params[:email],
       user.password = params[:password],
-      user.password_confirmation = params[:password_confirmation]
-
+      user.password_confirmation = params[:password_confirmation],
+      user.race_date = params[:race_date]
+    user.save
+    render json: user.as_json
+  end
 end

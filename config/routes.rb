@@ -12,6 +12,9 @@ Rails.application.routes.draw do
     delete '/workouts/:id' => 'workouts#destroy'
 
     post '/users' => 'users#create'
+    get '/users/:id/edit' => 'users#edit'
+    patch '/users/:id' => 'users#update'
+    
     post '/sessions' => 'sessions#create'
 
 
