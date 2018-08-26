@@ -11,7 +11,8 @@ class Api::UsersController < ApplicationController
       last_name: params[:last_name],
       email: params[:email],
       password: params[:password],
-      password_confirmation: params[:password_confirmation]
+      password_confirmation: params[:password_confirmation],
+      race_date: params[:race_date.to_date]
     )
     user.save
     render json: user.as_json
@@ -29,7 +30,7 @@ class Api::UsersController < ApplicationController
       user.email = params[:email],
       user.password = params[:password],
       user.password_confirmation = params[:password_confirmation],
-      user.race_date = params[:race_date]
+      user.race_date = params[:race_date.to_date]
     user.save
     render json: user.as_json
   end

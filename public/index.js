@@ -24,6 +24,7 @@ var SignupPage = {
       email: "",
       password: "",
       passwordConfirmation: "",
+      race_date: "",
       errors: []
     };
   },
@@ -34,12 +35,13 @@ var SignupPage = {
         last_name: this.last_name,
         email: this.email,
         password: this.password,
-        password_confirmation: this.passwordConfirmation
+        password_confirmation: this.passwordConfirmation,
+        race_date: this.race_date
       };
       axios
         .post("/api/users", params)
         .then(function(response) {
-          router.push("/login");
+          router.push("/dashboard");
         })
         .catch(
           function(error) {
@@ -98,8 +100,27 @@ var LogoutPage = {
 };
 
 
-var DashboardPage = {
-  template: "#dashboard-page",
+// var DashboardPage = {
+//   template: "#dashboard-page",
+//   data: function() {
+//     return {
+//       message: "Your 140.6 Training Plan",
+//       workouts: [],
+
+//     };
+//   },
+//   created: function() {
+//     axios.get('/api/workouts').then(function(response) {
+//       console.log(response.data, this);
+//       this.workouts = response.data;
+//     }.bind(this));
+//   },
+//   methods: {},
+//   computed: {}
+// };
+
+var CalendarPage = {
+  template: "#calendar-page",
   data: function() {
     return {
       message: "Your 140.6 Training Plan",
@@ -122,7 +143,8 @@ var router = new VueRouter({
     { path: "/signup", component: SignupPage },
     { path: "/login", component: LoginPage },
     { path: "/logout", component: LogoutPage },
-    { path: "/dashboard", component: DashboardPage }
+    { path: "/dashboard", component: DashboardPage },
+    { path: "/calendar", component: CalendarPage }
   ],
   scrollBehavior: function(to, from, savedPosition) {
     return { x: 0, y: 0 };
