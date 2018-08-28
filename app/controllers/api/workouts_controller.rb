@@ -1,6 +1,6 @@
 class Api::WorkoutsController < ApplicationController
   def index
-    workouts = Workout.where(phase: "Full")
+    workouts = Workout.where(phase: "Full").order(:id)
     render json: workouts.as_json
   end
 

@@ -100,27 +100,8 @@ var LogoutPage = {
 };
 
 
-// var DashboardPage = {
-//   template: "#dashboard-page",
-//   data: function() {
-//     return {
-//       message: "Your 140.6 Training Plan",
-//       workouts: [],
-
-//     };
-//   },
-//   created: function() {
-//     axios.get('/api/workouts').then(function(response) {
-//       console.log(response.data, this);
-//       this.workouts = response.data;
-//     }.bind(this));
-//   },
-//   methods: {},
-//   computed: {}
-// };
-
-var CalendarPage = {
-  template: "#calendar-page",
+var DashboardPage = {
+  template: "#dashboard-page",
   data: function() {
     return {
       message: "Your 140.6 Training Plan",
@@ -133,6 +114,87 @@ var CalendarPage = {
       console.log(response.data, this);
       this.workouts = response.data;
     }.bind(this));
+  },
+  methods: {},
+  computed: {}
+};
+
+var CalendarPage = {
+  template: "#calendar-page",
+  data: function() {
+    return {
+      message: "Your 140.6 Training Plan",
+      myEvents: [
+      {
+          title: 'Rest Day',
+          start: '2014-06-03'
+        },
+        {
+          title: 'Open Water Swim',
+          start: '2014-06-07',
+          end: '2014-06-10'
+        },
+        {
+          id: 999,
+          title: 'Repeating Event',
+          start: '2014-06-09T16:00:00'
+        },
+        {
+          id: 999,
+          title: 'Repeating Event',
+          start: '2014-06-16T16:00:00'
+        },
+        {
+          title: 'Meeting',
+          start: '2014-06-12T10:30:00',
+          end: '2014-06-12T12:30:00'
+        },
+        {
+          title: 'Lunch',
+          start: '2014-06-12T12:00:00'
+        },
+        {
+          title: 'Birthday Party',
+          start: '2014-06-13T07:00:00'
+        },
+        {
+          title: 'Click for Google',
+          url: 'http://google.com/',
+          start: '2014-06-28'
+        }
+      ],
+
+    };
+  },
+  created: function() {
+    axios.get('/api/workouts').then(function(response) {
+      console.log(response.data, this);
+      this.myEvents = [
+      {
+        title: response.data[0].phase,
+        start: response.data[0].start_date
+      }
+      ];
+      $(document).ready(function() {
+        console.log(this)
+        $('#calendar').fullCalendar({
+          header: {
+            left: 'prev,next today',
+            center: 'title',
+            right: 'month,agendaWeek,agendaDay'
+          },
+          defaultDate: '2018-08-08',
+          defaultView: 'month',
+          selectable: true,
+          selectHelper: true,
+          editable: true,
+          events: this.myEvents
+        });
+
+      }.bind(this));
+    }.bind(this));
+    
+    
   },
   methods: {},
   computed: {}
