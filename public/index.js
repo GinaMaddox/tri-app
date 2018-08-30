@@ -138,14 +138,12 @@ var CalendarPage = {
       $(document).ready(function() {
         console.log(this);
         $('#calendar').fullCalendar({
-          themeSystem: 'bootstrap3',
-          defaultView: 'month',
           header: {
-            left: '',
+            left: 'month, agendaWeek',
             center: 'title',
             right: 'today prev, next'
           },
-          
+
           selectable: true,
           selectHelper: true,
           editable: true,
