@@ -49,6 +49,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.9.0/fullcalendar.js"></script>
+    <script type='text/javascript' src='fullcalendar/gcal.js'></script>
 
     <script>
   
@@ -117,13 +118,23 @@
   </div>
 </template>
 
+
 <template id="calendar-page">
   <div class="vue-component">
     <p> {{ message }}</p>
-    <div id="calendar"></div>
+    <div id="calendar">
+    </div>
   </div>
+  <!-- <div class="vue-component">
+    <div id="app" class="wrapper">  
+      <calendar :events="events" :editable="true"></calendar>
+    </div>
+  </div> -->
 
 </template>
+
+
+
 
 
 <template id="login-page">
@@ -153,6 +164,7 @@
   <div class="vue-component">
     <p> {{ message }}</p>
     <div v-for="workout in workouts">
+     <p>Date: {{ workout.start}} </p>
      <p>Swim: {{ workout.swim_hours}} {{workout.swim}}</p>
      <p>Bike: {{workout.bike_hours}} {{workout.bike}}</p> 
      <p>Run: {{workout.run_hours}} {{workout.run}}</p> 

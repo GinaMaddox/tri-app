@@ -104,7 +104,7 @@ var DashboardPage = {
   template: "#dashboard-page",
   data: function() {
     return {
-      message: "Your 140.6 Training Plan",
+      message: "Your Training Plan",
       workouts: [],
 
     };
@@ -119,72 +119,33 @@ var DashboardPage = {
   computed: {}
 };
 
+
 var CalendarPage = {
   template: "#calendar-page",
   data: function() {
     return {
       message: "Your 140.6 Training Plan",
-      myEvents: [
-      {
-          title: 'Rest Day',
-          start: '2014-06-03'
-        },
-        {
-          title: 'Open Water Swim',
-          start: '2014-06-07',
-          end: '2014-06-10'
-        },
-        {
-          id: 999,
-          title: 'Repeating Event',
-          start: '2014-06-09T16:00:00'
-        },
-        {
-          id: 999,
-          title: 'Repeating Event',
-          start: '2014-06-16T16:00:00'
-        },
-        {
-          title: 'Meeting',
-          start: '2014-06-12T10:30:00',
-          end: '2014-06-12T12:30:00'
-        },
-        {
-          title: 'Lunch',
-          start: '2014-06-12T12:00:00'
-        },
-        {
-          title: 'Birthday Party',
-          start: '2014-06-13T07:00:00'
-        },
-        {
-          title: 'Click for Google',
-          url: 'http://google.com/',
-          start: '2014-06-28'
-        }
-      ],
+      myEvents:[],
+      
 
     };
   },
   created: function() {
     axios.get('/api/workouts').then(function(response) {
       console.log(response.data, this);
-      this.myEvents = [
-      {
-        title: response.data[0].phase,
-        start: response.data[0].start_date
-      }
-      ];
+      this.myEvents = response.data;
+
       $(document).ready(function() {
-        console.log(this)
+        console.log(this);
         $('#calendar').fullCalendar({
-          header: {
-            left: 'prev,next today',
-            center: 'title',
-            right: 'month,agendaWeek,agendaDay'
-          },
-          defaultDate: '2018-08-08',
+          themeSystem: 'bootstrap3',
           defaultView: 'month',
+          header: {
+            left: '',
+            center: 'title',
+            right: 'today prev, next'
+          },
+          
           selectable: true,
           selectHelper: true,
           editable: true,
@@ -196,7 +157,11 @@ var CalendarPage = {
     
     
   },
-  methods: {},
+  methods: {
+    'eventClick' (event, jsEvent, pos) {
+      console.log('eventClick', event, jsEvent, pos)
+    }
+  },
   computed: {}
 };
 var router = new VueRouter({

@@ -20,12 +20,35 @@
 # => Sun, 28 Jan 2018 15:15:07 UTC +00:00
 # irb(main):013:0>
 
-
+# ************************************************
 # require 'date'
 
-# today = DateTime.now
-# race_date = Date.new(2018, 11, 3)
+# race_date = DateTime.new(2018, 11, 3)
+# start_date = race_date
+
+# 210.times do
+# 	start_date - 1
+# 	puts start_date
+#     start_date -= 1
+# end
+# ******************************************************
+
+# # today = DateTime.now
+# # race_date = DateTime.new(2018, 11, 3)
+# # start_date = race_date - 210
+# # # days_to_go = race_date - today
+# # puts start_date
+
+# # today = DateTime.now
+# # start_date = today
+# # end_date = start_date + 210
+# # puts start_date
+# # puts end_date
+
+
+
 # days_to_go = race_date - today
+
 # time_until = race_date - today
 # time_until.to_i             # get the number of days until race
 

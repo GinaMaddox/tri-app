@@ -1,6 +1,8 @@
-json.array! workouts.each do |workout|
-  json.id workout.id
-  json.phase workout.phase
+json.array! @workouts.each do |workout|
+  # json.id workout.id
+  json.title workout.phase
+  json.start workout.start_date
+  json.end_date workout.end_date
   json.week workout.week
   json.day workout.day
   json.swim workout.swim
@@ -9,4 +11,6 @@ json.array! workouts.each do |workout|
   json.bike_hours workout.bike_hours
   json.run workout.run
   json.run_hours workout.run_hours
+  json.total_hours workout.total_hours
+  
 end
