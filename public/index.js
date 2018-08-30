@@ -138,6 +138,12 @@ var CalendarPage = {
       $(document).ready(function() {
         console.log(this);
         $('#calendar').fullCalendar({
+          defaultView: 'month',
+          firstDay: 1,
+          eventBackgroundColor: "light blue",
+          eventClick: function(calEvent, jsEvent, view) {
+            alert('Event: ' + calEvent.title);
+          },
           header: {
             left: 'month, agendaWeek',
             center: 'title',
