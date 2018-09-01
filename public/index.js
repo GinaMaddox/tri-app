@@ -10,7 +10,24 @@ var HomePage = {
     };
   },
   created: function() {},
-  methods: {},
+  methods: {
+    submit: function(){
+      console.log('event date submit')
+      var params = {
+        race_date: this.start
+      };
+      axios
+        .post("/api/users", params)
+        .then(function(response) {
+          router.push("/calendar");
+        })
+        .catch(
+          function(error) {
+            this.errors = error.response.data.errors;
+          }.bind(this)
+        );
+    }
+  },
   computed: {}
 };
 
@@ -124,7 +141,7 @@ var CalendarPage = {
   template: "#calendar-page",
   data: function() {
     return {
-      message: "Your 140.6 Training Plan",
+      message: "Your Training Plan",
       myEvents:[],
       
 
@@ -142,17 +159,21 @@ var CalendarPage = {
           firstDay: 1,
           eventBackgroundColor: "light blue",
           eventClick: function(calEvent, jsEvent, view) {
-            alert('Event: ' + calEvent.title);
+            alert('Description: ' + calEvent.swim + " " + calEvent.bike + " " + calEvent.run + " " + calEvent.run + " " + calEvent.total_hours);
           },
+          // eventMouseover: function(event, jsEvent, view){
+          //   event.week + " " + event.day
+          // },
           header: {
-            left: 'month, agendaWeek',
+            
+            left: 'month,agendaWeek,agendaDay,list',
             center: 'title',
-            right: 'today prev, next'
+            right: 'today prev,next'
           },
-
           selectable: true,
           selectHelper: true,
           editable: true,
+          eventLimit: true,
           events: this.myEvents
         });
 
@@ -162,9 +183,6 @@ var CalendarPage = {
     
   },
   methods: {
-    'eventClick' (event, jsEvent, pos) {
-      console.log('eventClick', event, jsEvent, pos)
-    }
   },
   computed: {}
 };
