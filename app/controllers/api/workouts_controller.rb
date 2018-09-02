@@ -16,12 +16,12 @@ class Api::WorkoutsController < ApplicationController
       total_hours: params[:total_hours]
       )
     workout.save
-    render json: workout.as_json
+    render "show.json.jbuilder"
   end
 
   def show
     workout = Workout.find_by(id: params[:id])
-    render json: workout.as_json
+    render "show.json.jbuilder"
   end
 
   def update
@@ -34,7 +34,7 @@ class Api::WorkoutsController < ApplicationController
     workout.run = params[:run] || workout.run 
     workout.total_hours = params[:total_hours] || workout.total_hours
     workout.save
-    render json: workout.as_json
+    render "show.json.jbuilder"
   end
 
   def destroy

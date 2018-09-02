@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Homepage (default) | AppStrap Bootstrap Theme by Themelize.me</title>
+    <title>Promo Header | AppStrap Bootstrap Theme by Themelize.me</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,7 +16,7 @@
     <!-- Plugins required on all pages NOTE: Additional non-required plugins are loaded ondemand as of AppStrap 2.5 -->
     
     <!-- Theme style -->
-    <link href="/assets/css/theme-style.min.css" rel="stylesheet">
+    <link href="assets/css/theme-style.min.css" rel="stylesheet">
     
     <!--Your custom colour override-->
     <link href="#" id="colour-scheme" rel="stylesheet">
@@ -61,12 +61,38 @@
   </head>
   
   <!-- ======== @Region: body ======== -->
-  <body class="page page-index navbar-layout-default">
+  <body class="page page-index-promo-header navbar-layout-default">
     
     <!-- @plugin: page loading indicator, delete to remove loader -->
     <div class="page-loader" data-toggle="page-loader"></div>
     
     <a id="#top" href="#content" class="sr-only">Skip to content</a> 
+    
+    <!-- ======== @Region: #highlighted ======== -->
+    <div id="highlighted">
+      <!-- Image Banner: Use the the data-bg-img functionality to create a simple image banner Use spacer classes to make the banner larger with padding, allows for easy responsive changes too see: elements-ctas.htm To make the banner full height/screen add the attributes: data-toggle="full-height" data-offset="#header" -->
+      <div class="bg-white overlay overlay-primary overlay-op-7 text-center px-3 py-5 py-lg-10 flex-valign" data-bg-img="assets/img/backgrounds/young-man-standing-in-front-of-concrete-wall-picjumbo-com.jpg" data-css='{"background-position": "right bottom"}' data-toggle="full-height">
+        <h2 class="display-4 text-white" data-animate="fadeIn" data-animate-delay="0.2">
+          Choose <span class="font-weight-bold">AppStrap!</span>
+        </h2>
+        <h3 class="text-grey font-weight-normal" data-animate="fadeIn" data-animate-delay="0.35">
+          When your backs against the wall! 
+        </h3>
+        <hr class="hr-inverse hr-lg w-20 mx-auto my-4 mb-5" data-animate="fadeIn" data-animate-delay="0.45" />
+        <div class="col-md-6 mx-auto">
+          <form id="callback-form" action="#" role="form">
+            <div class="input-group input-group-lg">
+              <label class="sr-only" for="callback-number">Your Number</label>
+              <input type="tel" class="form-control" id="callback-number" placeholder="Your Number">
+              <span class="input-group-append">
+                <button class="btn btn-dark rounded-0" type="button"><i class="fa fa-phone icon-1x mr-md-1"></i> <span class="d-none d-lg-inline-block text-sm">Get Callback</span></button>
+              </span>
+            </div>
+            <small>or <a href="#content" data-toggle="scroll-link">find out more below</a></small>
+          </form>
+        </div>
+      </div>
+    </div>
     
     <!-- ======== @Region: #header ======== -->
     <div id="header">
@@ -157,7 +183,7 @@
                             Classic Homepages
                           </h4>
                           <div class="row">
-                            <div class="col-lg-6"> <a href="intro.html" class="dropdown-item">Intro</a> <a href="index.html" class="dropdown-item active">Homepage (default)</a> <a href="index-static.html" class="dropdown-item">Homepage No Slider</a> <a href="index-boxed.html" class="dropdown-item">Homepage Boxed</a> <a href="index-promo-header.html" class="dropdown-item">Promo Header</a> <a href="index-coming-soon.html" class="dropdown-item">Coming Soon</a> <a href="index-coming-soon-newsletter.html" class="dropdown-item">Coming Soon with newsletter</a> <a href="index-onepager.html" class="dropdown-item">One Pager Slideshow</a> </div>
+                            <div class="col-lg-6"> <a href="intro.html" class="dropdown-item">Intro</a> <a href="index.html" class="dropdown-item active">Homepage (default)</a> <a href="index-static.html" class="dropdown-item">Homepage No Slider</a> <a href="index-boxed.html" class="dropdown-item">Homepage Boxed</a> <a href="index-promo-header.html" class="dropdown-item active">Promo Header</a> <a href="index-coming-soon.html" class="dropdown-item">Coming Soon</a> <a href="index-coming-soon-newsletter.html" class="dropdown-item">Coming Soon with newsletter</a> <a href="index-onepager.html" class="dropdown-item">One Pager Slideshow</a> </div>
                             <div class="col-lg-6"> <a href="index-onepager-image.html" class="dropdown-item">One Pager Image</a> <a href="index-onepager-image-full-height.html" class="dropdown-item">One Pager Image Full Height</a> <a href="index-onepager-bg-slideshow.html" class="dropdown-item">One Pager Background Slideshow</a> <a href="index-onepager-dotted-menu-left.html" class="dropdown-item">One Pager Dotted Menu Left</a> <a href="index-onepager-dotted-menu-right.html" class="dropdown-item">One Pager Dotted Menu Right</a> <a href="index-onepager-dotted-menu-bottom.html" class="dropdown-item">One Pager Dotted Menu Bottom</a> <a href="index-onepager-submenu.html" class="dropdown-item">One Pager Submenu</a> </div>
                           </div>
                         </div>
@@ -315,21 +341,21 @@
                               <h5 class="mt-2">
                                 Fully Optimized
                               </h5>
-                              <p class="text-sm mb-0">Camur consequat conventio paulatim probo sudo usitas vel wisi.</p>
+                              <p class="text-sm mb-0">Abdo abigo neo nisl valetudo.</p>
                             </div>
                             <div class="col-lg-4 py-2">
                               <i class="fa fa-wrench icon-3x op-6"></i> 
                               <h5 class="mt-2">
                                 Free Support
                               </h5>
-                              <p class="text-sm mb-0">Eros nobis obruo rusticus.</p>
+                              <p class="text-sm mb-0">Augue conventio dignissim fere metuo quae quis venio.</p>
                             </div>
                             <div class="col-lg-4 py-2">
                               <i class="fa fa-rocket icon-3x op-6"></i> 
                               <h5 class="mt-2">
                                 Free Upgrades
                               </h5>
-                              <p class="text-sm mb-0">Damnum illum loquor nisl occuro odio suscipere.</p>
+                              <p class="text-sm mb-0">Dolus eu imputo molior nisl nostrud sino vero.</p>
                             </div>
                           </div>
                         </div>
@@ -340,21 +366,21 @@
                               <h5 class="mt-2">
                                 99.9% Uptime
                               </h5>
-                              <p class="text-sm mb-0">Melior persto praesent sudo.</p>
+                              <p class="text-sm mb-0">Accumsan diam ludus melior sed utinam voco.</p>
                             </div>
                             <div class="col-lg-4 py-2">
                               <i class="fa fa-users icon-3x op-6"></i> 
                               <h5 class="mt-2">
                                 Multiuser
                               </h5>
-                              <p class="text-sm mb-0">Importunus inhibeo natu oppeto populus quis refero verto.</p>
+                              <p class="text-sm mb-0">Dolus elit genitus laoreet pertineo praesent refoveo vindico.</p>
                             </div>
                             <div class="col-lg-4 py-2">
                               <i class="fa fa-plug icon-3x op-6"></i> 
                               <h5 class="mt-2">
                                 Plug n play
                               </h5>
-                              <p class="text-sm mb-0">Distineo ille nimis praesent saepius ymo.</p>
+                              <p class="text-sm mb-0">Abbas eligo nibh persto.</p>
                             </div>
                           </div>
                         </div>
@@ -370,130 +396,8 @@
       </div>
     </div>
     
-    <!-- ======== @Region: #highlighted ======== -->
-    <div id="highlighted">
-      <!-- Showshow - Slider Revolution see: plugins/slider-revolution/examples&sources for help invoke using data-toggle="slider-rev" options can be passed to the slider via HTML5 data- ie. data-startwidth="960" -->
-      <div class="slider-wrapper rev_slider_wrapper fullscreen-container bg-black" data-page-class="slider-appstrap-theme">
-        <div class="rev_slider fullscreenbanner" data-toggle="slider-rev" data-settings='{"startwidth":1100, "startheight":620, "delay":10000}'>
-          <ul>
-            <!-- SLIDE 1 -->
-            <li class="slide overlay overlay-op-4 overlay-gradient" data-transition="fadethroughdark" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="default" data-thumb="assets/img/slides/app_bg.jpg" data-rotate="0" data-saveperformance="off" data-title="Slide" data-link="shop-list.html">
-              <img src="assets/img/slide-dummy.png" data-lazyload="assets/img/slides/app_bg.jpg" alt="background image" data-bgposition="center top" data-bgfit="cover" data-bgparallax="off" class="rev-slidebg" data-no-retina />
-              <!-- SLIDE 1 Content-->
-              <div class="slide-content container" style="z-index: 10;">
-                <!--elements within .slide-content are pushed below navbar on "behind"-->
-                <!-- Layer 1 -->
-                <div class="tp-caption text-grey" data-x="['left','left','left','left']" data-hoffset="['0','0','0','40']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['120','120','120','120']" data-fontsize="['52','52','52','52']" data-lineheight="['52','52','52','52']" data-width="420" data-height="none" data-whitespace="normal" data-type="text" data-basealign="slide" data-responsive_offset="on" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1200,"to":"o:1;","delay":1300,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"opacity:0;","ease":"nothing"}]' data-textAlign="left"> <span class="font-weight-bold text-uppercase text-white">Welcome to AppStrap</span>
-</div>
-                <!-- Layer 3 -->
-                <div class="tp-caption text-grey" data-x="['left','left','left','left']" data-hoffset="['0','0','0','40']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['60','60','60','60']" data-fontsize="['20','20','20','30']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-basealign="slide" data-responsive_offset="on" data-frames='[{"delay":0,"speed":1200,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","delay":1400},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]' data-textAlign="['center','center','center','center']"> A real crowd-pleaser of a Bootstrap 4 Theme
-</div>
-                <!-- Layer 3 -->
-                <div class="tp-caption rs-parallaxlevel-8" data-frames='[{"from":"o:0;sX:3;sY:3;","speed":2000,"to":"o:0.20;sX:3;sY:3;","delay":1800,"ease":"default"},{"delay":"wait","speed":1200,"to":"x:[100%];","ease":"Power3.easeInOut"}]' data-x="left" data-y="bottom" data-hoffset="-200" data-voffset="0" data-width="none" data-height="none" data-type="image" data-basealign="slide"> <i class="fa fa-bullseye icon-20x icon-bg op-1 text-white"></i>
-</div>
-                <!-- Layer 4 -->
-                <div class="tp-caption tp-resizeme bg-primary-bright" data-frames='[{"from":"x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":500,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"x:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]' data-x="['left','left','left','left']" data-hoffset="['0','0','0','40']" data-y="bottom" data-voffset="100" data-width="380" data-height="4" data-basealign="slide"></div>
-              </div>
-            </li>
-            <!-- SLIDE 2 -->
-            <li class="slide" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-rotate="0" data-saveperformance="off" data-title="Slide">
-              <img src="assets/img/slides/transparent.png" class="rev-slidebg bg-white" alt="Background image" data-bgcolor="#ffffff" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" data-no-retina />
-              <!-- LAYERS -->
-              <!-- Layer 1 -->
-              <div class="tp-caption tp-resizeme rs-parallaxlevel-8" data-x="['left','left','left','left']" data-hoffset="['-364','-364','-420','-416']" data-y="['top','top','top','top']" data-voffset="['-185','-185','-185','-185']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="image" data-basealign="slide" data-responsive_offset="off" data-frames='[{"from":"x:left;rZ:-90deg;","speed":2500,"to":"o:1;","delay":500,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5;border-width:0px;">
-                <img src="assets/img/slides/header_penpot.png" alt="" data-ww="['650px','650px','650px','650px']" data-hh="['500px','500px','500px','500px']" width="650" height="500" data-no-retina />
-              </div>
-              <!-- Layer 2 -->
-              <div class="tp-caption tp-resizeme rs-parallaxlevel-9" data-x="['right','right','right','right']" data-hoffset="['-100','-100','-120','-144']" data-y="['top','top','top','top']" data-voffset="['-254','-254','-254','-254']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="image" data-basealign="slide" data-responsive_offset="on" data-frames='[{"from":"x:right;y:-500px;rZ:90deg;","speed":2500,"to":"o:1;","delay":500,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 6;border-width:0px;">
-                <img src="assets/img/slides/header_flowerpot.png" alt="" data-ww="['700px','700px','700px','700px']" data-hh="['600px','600px','600px','600px']" width="700" height="600" data-no-retina />
-              </div>
-              <!-- Layer 3 -->
-              <div class="tp-caption tp-resizeme rs-parallaxlevel-10" data-x="['left','left','left','left']" data-hoffset="['-472','-372','-340','-638']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['-484','-484','-520','-522']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="image" data-basealign="slide" data-responsive_offset="off" data-frames='[{"from":"x:left;rZ:45deg;","speed":2500,"to":"o:1;","delay":650,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7;border-width:0px;">
-                <img src="assets/img/slides/header_papers.png" alt="" data-ww="['900px','900px','900px','900px']" data-hh="['1000px','1000px','1000px','1000px']" width="900" height="1000" data-no-retina />
-              </div>
-              <!-- Layer 4 -->
-              <div class="tp-caption tp-resizeme rs-parallaxlevel-12" data-x="['left','left','left','left']" data-hoffset="['134','134','-2','-57']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['67','67','50','6']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="image" data-basealign="slide" data-responsive_offset="on" data-frames='[{"from":"y:bottom;rZ:90deg;","speed":1500,"to":"o:1;","delay":1050,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 8;border-width:0px;">
-                <img src="assets/img/slides/header_marker.png" alt="" data-ww="['200px','200px','200px','200px']" data-hh="['300px','300px','300px','300px']" width="200" height="300" data-no-retina />
-              </div>
-              <!-- Layer 5 -->
-              <div class="tp-caption tp-resizeme rs-parallaxlevel-11" data-x="['left','left','left','left']" data-hoffset="['181','181','30','-39']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['-170','-170','-190','-212']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="image" data-basealign="slide" data-responsive_offset="on" data-frames='[{"from":"y:bottom;rZ:-90deg;","speed":1500,"to":"o:1;","delay":1250,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 9;border-width:0px;">
-                <img src="assets/img/slides/header_edding.png" alt="" data-ww="['300px','300px','300px','300px']" data-hh="['400px','400px','400px','400px']" width="300" height="400" data-no-retina />
-              </div>
-              <!-- Layer 6 -->
-              <div class="tp-caption tp-resizeme rs-parallaxlevel-9" data-x="['right','right','right','right']" data-hoffset="['-364','-364','-479','-553']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['-155','-155','-180','-202']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="image" data-basealign="slide" data-responsive_offset="on" data-frames='[{"from":"x:right;rZ:-65deg;","speed":1500,"to":"o:1;","delay":700,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 12;border-width:0px;">
-                <img src="assets/img/slides/header_tablet.png" alt="" data-ww="['730px','730px','730px','730px']" data-hh="['520px','520px','520px','520px']" width="730" height="520" data-no-retina />
-              </div>
-              <!-- Layer 7 -->
-              <div class="tp-caption tp-resizeme rs-parallaxlevel-11" data-x="['right','right','right','right']" data-hoffset="['222','222','105','8']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['8','8','-17','-10']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="image" data-basealign="slide" data-responsive_offset="on" data-frames='[{"from":"x:right;rZ:90deg;","speed":1500,"to":"o:1;","delay":500,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 13;border-width:0px;">
-                <img src="assets/img/slides/header_pen.png" alt="" data-ww="['300px','300px','300px','300px']" data-hh="['500px','500px','500px','500px']" width="300" height="500" data-no-retina />
-              </div>
-              <div class="slide-content">
-                <!-- Layer 8 -->
-                <div class="tp-caption tp-resizeme rs-parallaxlevel-2" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-70','-70','-70','-90']" data-fontsize="['60','60','60','60']" data-lineheight="['60','60','60','60']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:-50px;rX:-45deg;sX:2;sY:2;opacity:0;","speed":1500,"to":"o:1;","delay":510,"ease":"Power4.easeOut"},{"delay":640,"speed":600,"to":"y:30px;rX:45deg;sX:0.8;sY:0.8;opacity:0;","ease":"Power2.easeInOut"}]' data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]">Flexbox Support.</div>
-                <!-- Layer 9 -->
-                <div class="tp-caption tp-resizeme rs-parallaxlevel-2" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-70','-70','-70','-90']" data-fontsize="['60','60','60','60']" data-lineheight="['60','60','60','60']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:-50px;rX:-45deg;sX:2;sY:2;opacity:0;","speed":1500,"to":"o:1;","delay":2940,"ease":"Power4.easeOut"},{"delay":660,"speed":600,"to":"y:30px;rX:45deg;sX:0.8;sY:0.8;opacity:0;","ease":"Power2.easeInOut"}]' data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]">Bootstrap 4 Based.</div>
-                <!-- Layer 10 -->
-                <div class="tp-caption tp-resizeme rs-parallaxlevel-2" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-70','-70','-70','-90']" data-fontsize="['60','60','60','60']" data-lineheight="['60','60','60','60']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:-50px;rX:-45deg;sX:2;sY:2;opacity:0;","speed":1500,"to":"o:1;","delay":5390,"ease":"Power4.easeOut"},{"delay":"690","speed":600,"to":"y:30px;rX:45deg;sX:0.8;sY:0.8;opacity:0;","ease":"Power2.easeInOut"}]' data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]">Fully Responsive.</div>
-                <!-- Layer 11 -->
-                <div class="tp-caption tp-resizeme rs-parallaxlevel-2" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-70','-70','-70','-90']" data-fontsize="['60','60','60','60']" data-lineheight="['60','60','60','60']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:-50px;rX:-45deg;sX:2;sY:2;opacity:0;","speed":1500,"to":"o:1;","delay":7890,"ease":"Power4.easeOut"},{"delay":"wait","speed":600,"to":"y:30px;rX:45deg;sX:0.8;sY:0.8;opacity:0;","ease":"Power2.easeInOut"}]' data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]">AppStrap.</div>
-                <!-- Layer 12 -->
-                <div class="tp-caption tp-resizeme rs-parallaxlevel-2" data-x="['center','center','center','center']" data-hoffset="['-8','-8','-8','-8']" data-y="['middle','middle','middle','middle']" data-voffset="['-10','-10','-10','-10']" data-fontsize="['20','20','20','25']" data-lineheight="['20','20','20','30']" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames='[{"from":"y:50px;rX:45deg;sX:2;sY:2;opacity:0;","speed":1500,"to":"o:1;","delay":600,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]' data-textAlign="['center','center','center','center']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]">The ultimate Bootstrap 4 Theme!</div>
-                <!-- Layer 13 -->
-                <div class="tp-caption rs-parallaxlevel-3" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['92','92','92','92']" data-width="none" data-height="none" data-whitespace="nowrap" data-responsive_offset="on" data-responsive="off" data-frames='[{"from":"y:100px;rX:90deg;opacity:0;","speed":1500,"to":"o:1;","delay":700,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'> <a href="https://wrapbootstrap.com/theme/appstrap-responsive-website-template-WB0C6D0H4?ref=tme" class="btn btn-outline-primary btn-rounded btn-xlg d-none d-md-block">Get AppStrap</a> <a href="https://wrapbootstrap.com/theme/appstrap-responsive-website-template-WB0C6D0H4?ref=tme" class="btn btn-outline-primary btn-rounded btn-sm d-md-none">Get AppStrap</a>
-</div>
-              </div>
-            </li>
-            <!-- SLIDE 3 -->
-            <li class="slide overlay overlay-op-2" data-index="rs-3007" data-transition="fadethroughdark" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-thumb="assets/img/slides/office_cover-100x50.jpg" data-rotate="0" data-saveperformance="off" data-title="Office">
-              <!-- MAIN IMAGE -->
-              <img src="assets/img/slides/office_cover.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgparallax="10" class="rev-slidebg" data-no-retina />
-              <!-- LAYERS -->
-              <!-- BACKGROUND VIDEO LAYER -->
-              <div class="rs-background-video-layer" data-forcerewind="on" data-volume="mute" data-videowidth="100%" data-videoheight="100%" data-videomp4="assets/img/slides/Working-Space.mp4" data-videopreload="auto" data-videoloop="loopandnoslidestop" data-forceCover="1" data-aspectratio="16:9" data-autoplay="true" data-autoplayonlyfirsttime="false"></div>
-              <!-- Layer 1 -->
-              <div class="tp-caption text-white" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['-30','-30','-30','-20']" data-fontsize="['70','70','70','70']"
-data-lineheight="['70','70','70','60']"
-data-width="none"
-data-height="none"
-data-whitespace="nowrap"
-data-type="text"
-data-basealign="slide"
-data-responsive_offset="off" data-frames='[{"from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","speed":1500,"to":"o:1;","delay":1000,"split":"chars","splitdelay":0.05,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
-data-textAlign="['left','left','left','left']"
-data-paddingtop="[10,10,10,10]"
-data-paddingright="[0,0,0,0]"
-data-paddingbottom="[10,10,10,10]"
-data-paddingleft="[0,0,0,0]">Pack with features!</div>
-              <!-- Layer 2 -->
-              <div class="tp-caption text-grey" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['22','22','22','0']"
-data-fontsize="['20','20','20','20']"
-data-lineheight="['20','20','20','20']"
-data-width="none"
-data-height="none"
-data-whitespace="nowrap"
-data-type="text"
-data-basealign="slide"
-data-responsive_offset="off" data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","speed":2000,"to":"o:1;","delay":1300,"ease":"Power4.easeInOut"},{"delay":"wait","speed":1000,"to":"y:[100%];","mask":"x:inherit;y:inherit;s:inherit;e:inherit;","ease":"Power2.easeInOut"}]'
-data-textAlign="['left','left','left','left']">Kickstart your next web project with AppStrap!</div>
-              <!-- Layer 3 -->
-              <div class="tp-caption" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['122','122','60','30']" data-width="none"
-data-height="none"
-data-whitespace="nowrap"
-data-basealign="slide"
-data-responsive_offset="off" data-responsive="on"
-data-frames='[{"from":"y:100px;rX:90deg;opacity:0;","speed":1500,"to":"o:1;","delay":700,"ease":"Power4.easeOut"},{"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]'>
-<a href="https://wrapbootstrap.com/theme/appstrap-responsive-website-template-WB0C6D0H4?ref=tme" class="btn btn-primary btn-rounded btn-xlg d-none d-md-block">Get AppStrap</a>
-<a href="https://wrapbootstrap.com/theme/appstrap-responsive-website-template-WB0C6D0H4?ref=tme" class="btn btn-primary btn-rounded btn-sm d-md-none">Get AppStrap</a> </div>
-            </li>
-          </ul>
-          <div class="tp-bannertimer tp-bottom"></div>
-        </div>
-        <!--end of tp-banner-->
-      </div>
-    </div>
-    
     <!-- ======== @Region: #content ======== -->
-    <div id="content" class="p-0">
+    <div id="content" class="pb-0">
       <!-- Features -->
       <div id="features" class="container py-4 py-lg-6">
         <hr class="hr-lg mt-0 mb-3 w-10 mx-auto hr-primary" />
@@ -510,42 +414,42 @@ data-frames='[{"from":"y:100px;rX:90deg;opacity:0;","speed":1500,"to":"o:1;","de
             <h5 class="mt-1 op-8">
               Fully Optimized
             </h5>
-            <p class="text-sm text-black-50">Aliquip facilisis letalis obruo populus sino virtus. Augue nunc quis.</p>
+            <p class="text-sm text-black-50">Genitus ludus luptatum magna natu vulpes. Adipiscing fere ille os refero sudo te tincidunt.</p>
           </div>
           <div class="col-lg-4 py-1">
             <i class="la la-wrench icon-3x text-primary" data-animate="fadeIn" data-animate-delay="0.2"></i> 
             <h5 class="mt-1 op-8">
               Free Support
             </h5>
-            <p class="text-sm text-black-50">Accumsan antehabeo comis gemino humo secundum torqueo. Damnum fere in nobis odio tego tincidunt.</p>
+            <p class="text-sm text-black-50">Adipiscing eligo elit euismod facilisi nunc pagus tation zelus.</p>
           </div>
           <div class="col-lg-4 py-1">
             <i class="la la-rocket icon-3x text-primary" data-animate="fadeIn" data-animate-delay="0.3"></i> 
             <h5 class="mt-1 op-8">
               Free Upgrades
             </h5>
-            <p class="text-sm text-black-50">Incassum lenis letalis quia ullamcorper validus. Inhibeo os patria refoveo.</p>
+            <p class="text-sm text-black-50">Comis iustum paratus paulatim usitas valetudo. Causa facilisis ille nibh obruo plaga roto torqueo.</p>
           </div>
           <div class="col-lg-4 py-1">
             <i class="la la-area-chart icon-3x text-primary" data-animate="fadeIn" data-animate-delay="0.4"></i> 
             <h5 class="mt-1 op-8">
               99.9% Uptime
             </h5>
-            <p class="text-sm text-black-50">Diam immitto laoreet utinam. At defui euismod inhibeo jumentum nobis quis tego.</p>
+            <p class="text-sm text-black-50">Abluo conventio euismod ibidem nostrud paratus quae vel vero.</p>
           </div>
           <div class="col-lg-4 py-1">
             <i class="la la-users icon-3x text-primary" data-animate="fadeIn" data-animate-delay="0.5"></i> 
             <h5 class="mt-1 op-8">
               Multiuser
             </h5>
-            <p class="text-sm text-black-50">Accumsan adipiscing augue bene euismod iaceo ludus ymo.</p>
+            <p class="text-sm text-black-50">Abigo appellatio ea enim feugiat iusto quae quidne ut zelus.</p>
           </div>
           <div class="col-lg-4 py-1">
             <i class="la la-plug icon-3x text-primary" data-animate="fadeIn" data-animate-delay="0.6"></i> 
             <h5 class="mt-1 op-8">
               Plug n play
             </h5>
-            <p class="text-sm text-black-50">Adipiscing luptatum scisco turpis validus. Abbas appellatio diam paulatim quidne refero turpis.</p>
+            <p class="text-sm text-black-50">Duis gravis minim pecus veniam. Blandit diam eum uxor.</p>
           </div>
         </div>
       </div>
@@ -566,7 +470,7 @@ data-frames='[{"from":"y:100px;rX:90deg;opacity:0;","speed":1500,"to":"o:1;","de
                   <h4 class="font-weight-bold text-white mb-0 op-9">
                     Fully Optimized
                   </h4>
-                  <p class="op-8 text-sm">Comis luptatum tego vel. Abluo gravis iriure. Eligo eros patria. Abigo cui distineo lenis macto nisl obruo quibus tamen utrum.</p>
+                  <p class="op-8 text-sm">Exputo inhibeo minim sit. Abico consectetuer euismod ex nutus pneum tum. Immitto laoreet mos quae similis.</p>
                 </div>
               </div>
               <div class="d-flex mb-3">
@@ -576,7 +480,7 @@ data-frames='[{"from":"y:100px;rX:90deg;opacity:0;","speed":1500,"to":"o:1;","de
                   <h4 class="font-weight-bold text-white mb-0 op-9">
                     Free Upgrades
                   </h4>
-                  <p class="op-8 text-sm">Brevitas camur loquor molior obruo premo saepius sed utrum. Adipiscing ulciscor ut. Iusto luptatum pala.</p>
+                  <p class="op-8 text-sm">Amet sagaciter sudo. Consectetuer diam eum minim nutus odio os paulatim. Natu neo te. Gemino hendrerit ludus mauris oppeto quae si tum validus.</p>
                 </div>
               </div>
               <div class="d-flex mb-3">
@@ -586,7 +490,7 @@ data-frames='[{"from":"y:100px;rX:90deg;opacity:0;","speed":1500,"to":"o:1;","de
                   <h4 class="font-weight-bold text-white mb-0 op-9">
                     99.9% Uptime
                   </h4>
-                  <p class="op-8 text-sm">Aliquam augue dignissim humo ille saepius tum ullamcorper. Genitus metuo mos occuro volutpat. Iusto pagus saluto ulciscor vulpes zelus.</p>
+                  <p class="op-8 text-sm">Antehabeo esca refero typicus valetudo veniam vulpes. Abluo jugis ullamcorper. Dolore gravis meus oppeto roto.</p>
                 </div>
               </div>
             </div>
@@ -783,61 +687,61 @@ data-frames='[{"from":"y:100px;rX:90deg;opacity:0;","speed":1500,"to":"o:1;","de
           <!--Project item 1-->
           <a href="assets/img/projects/project-1.jpg" class="project overlay-hover">
             <img src="assets/img/projects/project-1-sm.jpg" alt="Project 1" class="img-fluid" />
-            <span class="overlay-hover-content"> <i class="fa fa-arrow-circle-right icon-3x text-white"></i> <span class="h5 mt-4">Abigo Dolor Hos Inhibeo Secundum</span> </span>
+            <span class="overlay-hover-content"> <i class="fa fa-arrow-circle-right icon-3x text-white"></i> <span class="h5 mt-4">Diam Neque Occuro Te Vulpes</span> </span>
           </a>
           
           <!--Project item 2-->
           <a href="assets/img/projects/project-2.jpg" class="project overlay-hover">
             <img src="assets/img/projects/project-2-sm.jpg" alt="Project 2" class="img-fluid" />
-            <span class="overlay-hover-content"> <i class="fa fa-arrow-circle-right icon-3x text-white"></i> <span class="h5 mt-4">Cogo Et Gemino Paratus Rusticus</span> </span>
+            <span class="overlay-hover-content"> <i class="fa fa-arrow-circle-right icon-3x text-white"></i> <span class="h5 mt-4">Accumsan Feugiat Inhibeo Nisl Vulputate</span> </span>
           </a>
           
           <!--Project item 3-->
           <a href="assets/img/projects/project-3.jpg" class="project overlay-hover">
             <img src="assets/img/projects/project-3-sm.jpg" alt="Project 3" class="img-fluid" />
-            <span class="overlay-hover-content"> <i class="fa fa-arrow-circle-right icon-3x text-white"></i> <span class="h5 mt-4">Defui Erat Esca Euismod Jugis</span> </span>
+            <span class="overlay-hover-content"> <i class="fa fa-arrow-circle-right icon-3x text-white"></i> <span class="h5 mt-4">At Cogo Defui Gravis Quibus</span> </span>
           </a>
           
           <!--Project item 4-->
           <a href="assets/img/projects/project-4.jpg" class="project overlay-hover">
             <img src="assets/img/projects/project-4-sm.jpg" alt="Project 4" class="img-fluid" />
-            <span class="overlay-hover-content"> <i class="fa fa-arrow-circle-right icon-3x text-white"></i> <span class="h5 mt-4">Autem Cogo Melior Scisco Wisi</span> </span>
+            <span class="overlay-hover-content"> <i class="fa fa-arrow-circle-right icon-3x text-white"></i> <span class="h5 mt-4">Ille Iriure Nisl Odio Praemitto</span> </span>
           </a>
           
           <!--Project item 5-->
           <a href="assets/img/projects/project-5.jpg" class="project overlay-hover">
             <img src="assets/img/projects/project-5-sm.jpg" alt="Project 5" class="img-fluid" />
-            <span class="overlay-hover-content"> <i class="fa fa-arrow-circle-right icon-3x text-white"></i> <span class="h5 mt-4">Caecus Facilisis Genitus Interdico Usitas</span> </span>
+            <span class="overlay-hover-content"> <i class="fa fa-arrow-circle-right icon-3x text-white"></i> <span class="h5 mt-4">Antehabeo Aptent Ludus Quidne Tincidunt</span> </span>
           </a>
           
           <!--Project item 6-->
           <a href="assets/img/projects/project-6.jpg" class="project overlay-hover">
             <img src="assets/img/projects/project-6-sm.jpg" alt="Project 6" class="img-fluid" />
-            <span class="overlay-hover-content"> <i class="fa fa-arrow-circle-right icon-3x text-white"></i> <span class="h5 mt-4">Camur Minim Nisl Utrum Volutpat</span> </span>
+            <span class="overlay-hover-content"> <i class="fa fa-arrow-circle-right icon-3x text-white"></i> <span class="h5 mt-4">Ideo Praesent Proprius Tamen Vel</span> </span>
           </a>
           
           <!--Project item 7-->
           <a href="assets/img/projects/project-7.jpg" class="project overlay-hover">
             <img src="assets/img/projects/project-7-sm.jpg" alt="Project 7" class="img-fluid" />
-            <span class="overlay-hover-content"> <i class="fa fa-arrow-circle-right icon-3x text-white"></i> <span class="h5 mt-4">Consequat Duis Hendrerit Lobortis Ulciscor</span> </span>
+            <span class="overlay-hover-content"> <i class="fa fa-arrow-circle-right icon-3x text-white"></i> <span class="h5 mt-4">Cogo Gemino Importunus Iriure Modo</span> </span>
           </a>
           
           <!--Project item 8-->
           <a href="assets/img/projects/project-8.jpg" class="project overlay-hover">
             <img src="assets/img/projects/project-8-sm.jpg" alt="Project 8" class="img-fluid" />
-            <span class="overlay-hover-content"> <i class="fa fa-arrow-circle-right icon-3x text-white"></i> <span class="h5 mt-4">Facilisi Refero Rusticus Utinam Vereor</span> </span>
+            <span class="overlay-hover-content"> <i class="fa fa-arrow-circle-right icon-3x text-white"></i> <span class="h5 mt-4">Autem Bene Praemitto Sino Vulputate</span> </span>
           </a>
           
           <!--Project item 9-->
           <a href="assets/img/projects/project-9.jpg" class="project overlay-hover">
             <img src="assets/img/projects/project-9-sm.jpg" alt="Project 9" class="img-fluid" />
-            <span class="overlay-hover-content"> <i class="fa fa-arrow-circle-right icon-3x text-white"></i> <span class="h5 mt-4">Aptent Feugiat Luptatum Verto Voco</span> </span>
+            <span class="overlay-hover-content"> <i class="fa fa-arrow-circle-right icon-3x text-white"></i> <span class="h5 mt-4">Consectetuer Damnum Ea Os Vereor</span> </span>
           </a>
           
           <!--Project item 10-->
           <a href="assets/img/projects/project-10.jpg" class="project overlay-hover">
             <img src="assets/img/projects/project-10-sm.jpg" alt="Project 10" class="img-fluid" />
-            <span class="overlay-hover-content"> <i class="fa fa-arrow-circle-right icon-3x text-white"></i> <span class="h5 mt-4">Abico Autem Imputo Quae Ullamcorper</span> </span>
+            <span class="overlay-hover-content"> <i class="fa fa-arrow-circle-right icon-3x text-white"></i> <span class="h5 mt-4">Ideo Letalis Saluto Sit Ullamcorper</span> </span>
           </a>
         </div>
       </div>
