@@ -7,6 +7,7 @@ var HomePage = {
   data: function() {
     return {
       message: "Endurance Lab",
+      appName: "endurance lab"
     };
   },
   created: function() {},
