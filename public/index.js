@@ -142,7 +142,7 @@ var CalendarPage = {
   template: "#calendar-page",
   data: function() {
     return {
-      message: "Your Training Plan",
+      message: "",
       myEvents:[],
       
 
@@ -162,12 +162,15 @@ var CalendarPage = {
           eventClick: function(calEvent, jsEvent, view) {
             alert('Description: ' + calEvent.swim + " " + calEvent.bike + " " + calEvent.run + " " + calEvent.run + " " + calEvent.total_hours);
           },
+                
+        
+
           // eventMouseover: function(event, jsEvent, view){
           //   event.week + " " + event.day
           // },
           header: {
             
-            left: 'month,agendaWeek,agendaDay,list',
+            left: 'month,agendaWeek,agendaDay',
             center: 'title',
             right: 'today prev,next'
           },
@@ -187,6 +190,55 @@ var CalendarPage = {
   },
   computed: {}
 };
+var UploadPage = {
+  template: "#upload-page",
+    data: function(){
+      return {
+        file: ''
+      }
+    },
+
+    methods: {
+      /*
+        Submits the file to the server
+      */
+      submitFile(){
+        /*
+                Initialize the form data
+            */
+            let formData = new FormData();
+
+            /*
+                Add the form data we need to submit
+            */
+            formData.append('file', this.file);
+
+        /*
+          Make the request to the POST /single-file URL
+        */
+            axios.post( '/single-file',
+                formData,
+                {
+                headers: {
+                    'Content-Type': 'multipart/form-data'
+                }
+              }
+            ).then(function(){
+          console.log('SUCCESS!!');
+        })
+        .catch(function(){
+          console.log('FAILURE!!');
+        });
+      },
+
+      /*
+        Handles a change on the file upload
+      */
+      handleFileUpload(){
+        this.file = this.$refs.file.files[0];
+      }
+    }
+  }
 var router = new VueRouter({
   routes: [
     { path: "/", component: HomePage },
@@ -194,7 +246,8 @@ var router = new VueRouter({
     { path: "/login", component: LoginPage },
     { path: "/logout", component: LogoutPage },
     { path: "/dashboard", component: DashboardPage },
-    { path: "/calendar", component: CalendarPage }
+    { path: "/calendar", component: CalendarPage },
+    { path: "/upload", component: UploadPage }
   ],
   scrollBehavior: function(to, from, savedPosition) {
     return { x: 0, y: 0 };
